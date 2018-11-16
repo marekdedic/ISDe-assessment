@@ -21,7 +21,7 @@ for i in range(3):
         stat.histogram(digit)
         pyplot.title('Histogram, ' + names[j])
         output += 'The mean of the ' + str(i + 1) + '. digit, ' + names[j] + ': ' + str(stat.mean(digit)) + '\n'
-    pyplot.savefig('digit' + str(i) + '.pdf', dpi = 1000)
+    pyplot.savefig('digit' + str(i + 1) + '.pdf', dpi = 1000)
 
 for j in range(len(stats)):
     stat = stats[j]
