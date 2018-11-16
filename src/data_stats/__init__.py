@@ -1,2 +1,3 @@
 from .CDataStatsNoPreprocess import CDataStatsNoPreprocess
 from .CDataStatsTrimmed import CDataStatsTrimmed
+from .CDataStatsFrame import CDataStatsFrame
