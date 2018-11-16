@@ -1,1 +1,2 @@
 from .CDataStatsNoPreprocess import CDataStatsNoPreprocess
+from .CDataStatsTrimmed import CDataStatsTrimmed

@@ -1,14 +1,15 @@
 from matplotlib import pyplot
 
 from data_utils import load
-from data_stats import CDataStatsNoPreprocess
+from data_stats import CDataStatsNoPreprocess, CDataStatsTrimmed
 
 x, y = load('data/mnist.csv')
 
-dataStatsNoPreprocess = CDataStatsNoPreprocess()
+noPreprocess = CDataStatsNoPreprocess()
+trimmed = CDataStatsTrimmed(30)
 
 for i in range(3):
-    for stat in [dataStatsNoPreprocess]:
+    for stat in [trimmed]:
         pyplot.imshow(x[i].reshape(28, 28))
         pyplot.title('The ' + str(i + 1) + '. digit')
         pyplot.show()

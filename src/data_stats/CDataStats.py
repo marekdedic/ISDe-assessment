@@ -22,7 +22,6 @@ class CDataStats(ABC):
         return np.mean(self.preprocess(x))
 
     def histogram(self, x):
-        print(self.bins)
         pyplot.hist(self.preprocess(x), bins = self.bins)
         pyplot.xlabel('Pixel value')
         pyplot.ylabel('Frequency')
